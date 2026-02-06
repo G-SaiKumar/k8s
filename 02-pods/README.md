@@ -51,7 +51,7 @@
 - DNS: CoreDNS provides service/pod name resolution; pods use kube-dns by default.
 - Dual-stack: IPv4/IPv6 support (if enabled); pod and service IP families configured cluster-wide.
 - NAT: Services often NAT traffic (cluster IP → pod IP) via kube-proxy; some CNIs enable direct routing (no SNAT).
-- Viewing IPs: kubectl get pods -o wide, kubectl describe pod.
+- Viewing IPs: kubectl get pods -o wide, kubectl describe pod .
 
 ## Best practices (brief)
 - Use labels for selectors; keep annotations for metadata.
